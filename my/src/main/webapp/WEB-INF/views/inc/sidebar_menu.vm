@@ -1,0 +1,151 @@
+<div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header-->
+                
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                       <!--趋势分析开始-->
+                    <li>
+                        <a href="javascript:;" class="menu-dropdown">
+                            <i class="menu-icon glyphicon glyphicon-arrow-up"></i>
+                            <span class="menu-text">趋势分析</span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu submenu1">
+                            <li data-link="daily-statistical">
+                                <a href="/visit/daily-analyse/trend-analyse">
+                                    <span class="menu-text">日流量趋势分析</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                     <!--趋势分析结束-->
+                     
+                     <!--来源分析开始-->
+                    <li>
+                        <a href="javascript:;" class="menu-dropdown">
+                            <i class="menu-icon glyphicon glyphicon-log-in"></i>
+                            <span class="menu-text">来源分析</span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu submenu1">
+                            <li data-link="all-sources">
+                                <a href="/visit/stream_analysis/allsource">
+                                    <span class="menu-text">全部来源</span>
+                                </a>
+                            </li>
+                            <li data-link="search-engine">
+                                <a href="/visit/stream_analysis/search-engine">
+                                    <span class="menu-text">搜索引擎</span>
+                                </a>
+                            </li>
+                            <li data-link="search-terms">
+                                <a href="/visit/stream_analysis/search-terms">
+                                    <span class="menu-text">搜索词</span>
+                                </a>
+                            </li>
+                            <li data-link="external-links">
+                                <a href="/visit/stream_analysis/external-links">
+                                    <span class="menu-text">外部链接</span>
+                                </a>
+                            </li>
+                        <!--    <li data-link="internal-sources">
+                                <a href="/stream_analysis/internal-sources.htm">
+                                    <span class="menu-text">站内来源</span>
+                                </a>
+                            </li> -->
+                           
+                        </ul>
+                    </li>
+                     <!--来源分析结束-->
+                     
+                     <!--页面分析开始-->
+                    <li>
+                        <a href="javascript:;" class="menu-dropdown">
+                            <i class="menu-icon glyphicon glyphicon-list-alt"></i>
+                            <span class="menu-text">页面分析</span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu submenu1">
+                            <li data-link="page-url">
+                                <a href="/visit/page-analysis/page-url">
+                                    <span class="menu-text">受访页面</span>
+                                </a>
+                            </li>
+                            <li data-link="respondents-domain-name">
+                                <a href="/visit/page-analysis/domain-analysis">
+                                    <span class="menu-text">受访域名</span>
+                                </a>
+                            </li>
+                            <li data-link="entry-page">
+                                <a href="/visit/page-analysis/entry-page">
+                                    <span class="menu-text">入口页面</span>
+                                </a>
+                            </li>
+                           <!-- <li data-link="page-click-img">
+                                <a href="/page-analysis/page-click-img.htm">
+                                    <span class="menu-text">页面点击图</span>
+                                </a>
+                            </li>
+                            <li data-link="page-upstream-and-downstream">
+                                <a href="/page-analysis/page-upstream-and-downstream.htm">
+                                    <span class="menu-text">页面上下游</span>
+                                </a>
+                            </li> -->
+                           
+                        </ul>
+                    </li>
+                     <!--页面分析结束-->
+                     
+                    <!--访客分析开始-->
+                    <li>
+                        <a href="javascript:;" class="menu-dropdown">
+                            <i class="menu-icon glyphicon glyphicon-user"></i>
+                            <span class="menu-text">访客分析</span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu submenu1">
+                            <li data-link="terrain-analysis">
+                                <a href="/visit/access_analysis/terrain-analysis">
+                                    <span class="menu-text">地域分析</span>
+                                </a>
+                            </li>
+                            <li data-link="system-environment">
+                                <a href="/visit/access_analysis/system-environment">
+                                    <span class="menu-text">系统环境</span>
+                                </a>
+                            </li>
+                            <li data-link="visitor">
+                                <a href="/visit/access_analysis/visitor">
+                                    <span class="menu-text">新老访客</span>
+                                </a>
+                            </li>
+                            <li data-link="visitors-attribute">
+                                <a href="/visit/access_analysis/visitors-attribute">
+                                    <span class="menu-text">访客属性</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                     <!--访客分析结束-->
+                     
+                    
+                  
+                                                   
+                        </ul>
+                    </li>
+                                   
+                 
+                    
+                        </ul>
+                    </li>
+                
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>

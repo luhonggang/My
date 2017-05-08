@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>会展events后台管理系统</title>
+<meta name="description" content="data tables" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
+
+<!--Basic Styles-->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link id="bootstrap-rtl-link" href="javascript:;" rel="stylesheet" />
+<link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
+<link href="/assets/css/weather-icons.min.css" rel="stylesheet" />
+
+<!--Fonts-->
+<link href="http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+
+<!--Beyond styles-->
+<link id="beyond-link" href="/assets/css/beyond.min.css" rel="stylesheet" />
+<link href="/assets/css/demo.min.css" rel="stylesheet" />
+<link href="/assets/css/typicons.min.css" rel="stylesheet" />
+<link href="/assets/css/animate.min.css" rel="stylesheet" />
+<link id="skin-link" href="javascript:;" rel="stylesheet" type="text/css" />
+
+<!--Page Related styles-->
+<link href="/assets/css/dataTables.bootstrap.css" rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="/assets/css/umeditor.css">
+<link href="/assets/css/daterangepicker.css" rel="stylesheet" />
+
+<!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+<script src="/assets/js/skins.min.js"></script>
+</head>
+<!-- /Head -->
+<!-- Body -->
+<body  class="pop">
+<div class="bootbox-body">
+  <div style="background:#fff;" class="page-body">
+      <form class="form-horizontal">
+     
+      <div class="form-group">
+        <label class="col-xs-3 padding-top-7 text-align-right  control-label no-padding-right">数据日期 :</label>
+        <div class="col-xs-9">
+          <input type="text" data-date-format="yyyy-mm-dd hh:ii" class="form-control createday" >
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-xs-3 padding-top-7 text-align-right  control-label no-padding-right">选择上传文件 :</label>
+        <div class="col-xs-9">
+         <input type="file"></div>
+      </div>  
+    </form>
+  </div>
+</div>
+
+<!--Basic Scripts--> 
+<script src="/assets/js/jquery-2.0.3.min.js"></script> 
+<script src="/assets/js/bootstrap.min.js"></script> 
+
+<!--Beyond Scripts--> 
+<script src="/assets/js/beyond.min.js"></script> 
+<script src="/assets/js/global.js"></script> 
+
+<!--Beyond Scripts--> 
+<script src="/assets/js/beyond.min.js"></script>
+
+<!--Bootstrap Date Range Picker--> 
+<script src="/assets/js/daterangepicker/2.1.18/moment.js"></script>
+<script src="/assets/js/daterangepicker/2.1.18/daterangepicker.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".createday").daterangepicker({
+		"singleDatePicker": true,
+	    "showDropdowns": true,
+	
+	    "autoApply": true,
+	    "locale": {
+            "format": 'YYYY-MM-DD',
+            "daysOfWeek": [
+                "周日",
+                "周一",
+                "周二",
+                "周三",
+                "周四",
+                "周五",
+                "周六"
+            ],
+            "monthNames": [
+                "一月",
+                "二月",
+                "三月",
+                "四月",
+                "五月",
+                "六月",
+                "七月",
+                "八月",
+                "九月",
+                "十月",
+                "十一月",
+                "十二月"
+            ]
+        }
+    });
+	
+})
+</script>
+</body>
+<!--  /Body -->
+</html>

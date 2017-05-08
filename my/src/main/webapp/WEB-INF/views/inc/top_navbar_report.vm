@@ -1,0 +1,117 @@
+<div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="/visit/index.htm" class="navbar-brand">
+                        <small>
+                            <img width="140" height="40" src="/assets/img/logo.png" alt="">
+                        </small>
+                    </a>
+                </div>
+         
+                <!-- Account Area and Settings --->
+                <div class="navbar-header pull-left">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                        	#if($request.getSession().getAttribute("report")==true)
+                            <li class="default">
+                            <a href="/daily-analyse-report/daily-report"> 数据报告 </a>
+                            </li>
+                            #end
+                            #if($request.getSession().getAttribute("backend")==true)    
+                            <li class="cur">
+                                <a href="/visit/daily-analyse/trend-analyse">数据管理</a>
+                            </li>
+                            #end
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="navbar-header pull-left">
+                    <div class="navbar-account">
+                        <ul class="account-area" style="padding-left:0;">
+                            <li>
+                                <a data-toggle="dropdown" class="login-area area2 dropdown-toggle">
+                                    <section style="line-height:65px;">
+                                        <h2><span style="font-size:14px;">平台管理</span></h2>
+                                    </section>
+                                    <i class="fa fa-angle-down f18 white"></i>
+                                </a>
+                               <ul class="pull-right dropdown-menu dropdown-arrow dropdown-types">
+                                    <li><a target="_blank" href="http://mgt-soso.mysteelcms.com/index.htm"><span class="glyphicon glyphicon-search margin-right-10"></span>搜搜钢管理</a></li>
+			                        <li><a href="#"><span class="typcn typcn-group margin-right-10"></span>会展管理</a></li>
+			                        <li><a target="_blank" href="http://mgr.mysteelcms.com/tksweixin/packInfo/list.ms"><span class="glyphicon glyphicon-list-alt margin-right-10"></span>信息管理</a></li>
+			                        <li><a target="_blank" href="http://mgr.mysteelcms.com/black/"><span class="typcn typcn-ticket margin-right-10"></span>调研管理</a></li>
+			                        
+                                    <li><a target="_blank" href="http://mgr.mysteelcms.com/visit/daily-analyse-report/daily-report"><span class="glyphicon glyphicon-arrow-up margin-right-10"></span>流量管理</a></li>
+			                       
+			                  
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                  
+                            
+                           <!--  <li>
+                                <i class="bor-l"></i>
+                                <a style="display:block; float:left;" title="钢联主页" href="http://www.mysteel.com/" target="_blank">
+                                    <i class="icon glyphicon glyphicon-home"></i>
+                                </a>
+                                <i class="bor-r"></i>
+                            </li> -->
+                            <li style="">
+                                <!-- <a class="login-area dropdown-toggle" data-toggle="dropdown"  style="line-height:24px; margin-top:5px;">
+                                    <div class="avatar" title="View your public profile">
+                                        <img src="../assets/img/avatars/adam-jansen.jpg">
+                                    </div>
+                                    <section>
+                                        <h2><span class="profile"><span>David Stevenson</span></span></h2>
+                                    </section>
+                                </a> -->
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                    <!-- <li class="username"><a>David Stevenson</a></li>
+                                    <li class="email"><a>David.Stevenson@live.com</a></li> -->
+                                    <!--Avatar Area-->
+                                  <!--   <li>
+                                        <div class="avatar-area">
+                                            <img src="../assets/img/avatars/adam-jansen.jpg" class="avatar">
+                                            <span class="caption">Change Photo</span>
+                                        </div>
+                                    </li> -->
+                                    <!--Avatar Area-->
+                                   <!--  <li class="edit">
+                                        <a href="profile.htm" class="pull-left">Profile</a>
+                                        <a href="#" class="pull-right">Setting</a>
+                                    </li> -->
+                                    <!--Theme Selector Area-->
+                                    <li class="theme-area">
+                                        <ul class="colorpicker" id="skin-changer">
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#5DB2FF;" rel="/assets/css/skins/blue.min.css"></a></li>
+                                            <li><a class="colorpick-btn" href="#" style="background-color:#FF8F32;" rel="/assets/css/skins/orange.min.css"></a></li>
+                                           
+                                        </ul>
+                                    </li>
+                              
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            
+                            
+                           <li class="margin-left-20"><span class="white">用户：$request.getSession().getAttribute("adminContext").name</span>&nbsp;&nbsp;&nbsp;&nbsp; <a href="/visit/common" class="exit-area">退出</a></li>
+                        </ul>
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<context:component-scan base-package="com.my.website.controller" />
+	<!-- 静态文件映射路径 -->
+	<mvc:resources mapping="assets/js/**" location="assets/js/" />
+	<mvc:resources mapping="assets/css/**" location="assets/css/" />
+	<mvc:resources mapping="assets/img/**" location="assets/img/" />
+	<mvc:resources mapping="assets/fonts/**" location="assets/fonts/" />
+
+	<mvc:annotation-driven>
+		<!-- 解决乱码问题 -->
+		<mvc:message-converters register-defaults="true">
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<constructor-arg index="0" value="UTF-8" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<bean id="velocityConfig"
+		class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath">
+			<value>/WEB-INF/views</value>
+		</property>
+		<property name="configLocation" value="classpath:velocity.properties" />
+	</bean>
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="suffix">
+			<value>.vm</value>
+		</property>
+		<property name="contentType">
+			<value>text/html;charset=utf-8</value>
+		</property>
+		<property name="requestContextAttribute" value="true" />
+		<property name="exposeSessionAttributes" value="true" />
+		<property name="exposeRequestAttributes" value="true" />
+
+		<property name="toolboxConfigLocation" value="/WEB-INF/toolbox.xml" />
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.velocity.VelocityToolboxView" />
+	</bean>
+	<!-- 定义上传解析器 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设置最大的上传大小为5MB -->
+		<property name="maxUploadSize" value="5242880" />
+	</bean>
+	<bean id="jsonMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+	</bean>
+
+	<!-- <bean id="handlerExceptionResolver" class="com.mysteel.util.exception.ExceptionResolver">
+		<property name="jsonMessageConverter" ref="jsonMessageConverter"></property>
+	</bean> -->
+	<mvc:annotation-driven />
+	<!--<mvc:interceptors>
+		<mvc:interceptor>
+		</mvc:interceptor>
+	</mvc:interceptors> -->
+	
+	
+</beans>

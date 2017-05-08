@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>网站访问统计</title>
+ <!--Basic Styles-->
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+<link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+<link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
+<!--Beyond styles-->
+<link id="beyond-link" href="/assets/css/beyond_blue.min.css"
+	rel="stylesheet" />
+
+</head>
+<body>
+
+<!-- Main Container -->
+<div id="_all" class="main-container container-fluid"> 
+    <!-- Page Container -->
+    <div class="page-container"> 
+            <div class="page-body">
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                           <div class="widget-body bg-lightred no-box-shadow">
+                               <div class="row">
+                                  <div class="col-lg-2 col-sm-12 col-xs-12 text-align-center"><i class="fa fa-meh-o" style="font-size:100px"></i></div>
+    							  <div class="col-lg-10 col-sm-12 col-xs-12 ">
+                                    <h1>${msg}</h1>
+    							    <h5 class="white">
+    									<a style="cursor:pointer"  onclick="history.go(-1)">请点此返回</a>
+    								</h5>
+    							  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>
