@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<body>
+<h1>
+对不起，您暂时没有权限执行,如需要请联系系统管理员开通权限！！
+</h1>
+<a href="/" class="blue"  >请点此返回</a>
+</body>
+
+<script type="text/javascript">     
+/* function countDown(secs,surl){     
+ var jumpTo = document.getElementById('jumpTo');
+ jumpTo.in;'olplnerHTML=secs;  
+ if(--secs>0){     
+     setTimeout("countDown("+secs+",'"+surl+"')",5000);     
+     }     
+ else{       
+     location.href="/";     
+     }     
+ }      */
+</script> 
+</html>
+
+

@@ -1,0 +1,5 @@
+#pagination{float:right;padding:5px;}
+#pagination a:hover{text-decoration:none;color:#FF0000;}
+#pagination a{color:#606AEC; cursor: pointer;}
+#pagination .disabledPage{color:#666;}
+#pagination .disabledPage:hover{color:#666;};

@@ -1,0 +1,9 @@
+<script src="/assets/js/echart/echarts-all.js"></script> 
+    <script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/beyond.min.js"></script>
+    <script src="/assets/js/global.js"></script>
+<script src="/assets/js/datetime/moment.js"></script> 
+<script src="/assets/js/datetime/daterangepicker.js"></script> 
+<script src="/assets/js/datetime/bootstrap-datepicker.js"></script> 
+<script src="/assets/js/tool/pagination.js"></script> 

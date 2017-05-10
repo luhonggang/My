@@ -1,0 +1,13 @@
+<script src="/assets/js/jquery-2.0.3.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/beyond.min.js"></script>
+    <script src="/assets/js/global.js"></script>
+<script src="/assets/js/datetime/moment.js"></script> 
+<script src="/assets/js/datetime/daterangepicker.js"></script> 
+<script src="/assets/js/datetime/bootstrap-datepicker.js"></script> 
+<script src="/assets/js/datetime/bootstrap-datetimepicker.min.js"></script>
+<script src="/assets/js/datetime/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script src="/assets/js/bootbox/bootbox.js"></script> 
+<script src="/assets/js/ajaxfileupload.js"></script> 
+<script src="/assets/js/page/report/commonByczk.js"></script> 
+<script src="/assets/js/tool/pagination.js"></script>
